@@ -6,6 +6,7 @@ import { getMembers,getTeams,postMembers,postTeams,getTeamMembers ,updateMember,
 import { getEvents,postEvents,deleteEvents,updateEvents } from '../controllers/eventControllers.js';
 import * as controller from '../controllers/quizController.js'
 import { getRoomByRoomId, getRooms,joinRoom, leaveRoom} from '../controllers/omegle.js';
+import { getConfession,createConfession,deleteConfession } from '../controllers/confessionController.js';
 
 
 const router =express.Router(); 
@@ -37,6 +38,11 @@ router.put("/posts/:id/comment/:commentId",deleteComment);
 router.get("/:userId/posts", getPostsOfUser); 
 router.get("/potd",getPotd); //Potd=post of the day
 router.get("/postboard",getLeaderboardofPosts);
+
+//confession
+router.get("/confession",getConfession);
+router.post("/confession",createConfession);
+router.delete("/confession/:id",deleteConfession);
 
 //teams and members
 router.get("/teams",getTeams);
