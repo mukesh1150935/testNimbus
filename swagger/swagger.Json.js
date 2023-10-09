@@ -28,7 +28,7 @@ const options = {
         security: [{ bearerAuth: [] }],
         servers: [
             {
-                url: "http://localhost:8050/",
+                url: "https://cc-hillfair-2k23.onrender.com/",
                 description: "Development server",
             },
         ],
