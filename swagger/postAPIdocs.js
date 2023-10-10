@@ -87,10 +87,10 @@
  *                                  type: Date
  *                                  description: date of post created 
  *                          example:
- *                              caption: 6-march target to become potd,
- *                              creator: 63e0fbe4e0521b80d5a72efb,
- *                              photo: potdpotdpotdpotdpotd,
- *                              isVideo: true                         
+ *                              caption: new post 
+ *                              creator: 64273050cac7e7e7ea65ed89
+ *                              photo: https://res.cloudinary.com/dugwczlzo/image/upload/v1681711392/Nimbus2k23/iz4hpfwzjmxqxfdqgifg.jpg
+ *                              isVideo: false                       
  *
  *      responses:
  *          '201':    
@@ -214,9 +214,9 @@
  *                           type: Date
  *                           description: date of post created 
  *                          example:
- *                              caption: 6-march target to become potd,
- *                              creator: 63e0fbe4e0521b80d5a72efb,
- *                              photo: potdpotdpotdpotdpotd,
+ *                              caption: 6-march target to become potd
+ *                              creator: 63e0fbe4e0521b80d5a72efb
+ *                              photo: potdpotdpotdpotdpotd
  *                              isVideo: true                         
  *      responses:
  *          '202':    
