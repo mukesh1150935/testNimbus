@@ -5,34 +5,33 @@ const userSchema = new mongoose.Schema(
         firebaseId: {
             type: String,
             required: true,
-            unique: true,
+            
         },
         userName: {
             type: String,
-            minLength: 5,
+            minLength: 1,
             maxLength: 128,
             required: true,
-            unique: true,
+            
         },
         phoneNumber: {
             type: String,
             minLength: 10,
             maxLength: 10,
             
-            unique: true,
+        
         },
         password: {
             type: String,
-            required: true,
+            
         },
         email: {
             type: String,
-            required: true,
-            unique: true,
+            
         },
         fullName: {
             type: String,
-            minLength: 2,
+            minLength: 1,
             maxLength: 255,
             
         },
