@@ -99,7 +99,7 @@ export const postUsers = async(req,res)=>{
         userName,
         email,
         password,
-        
+        phoneNumber,
         instaId,
         profileImage,
         linkedIn,
@@ -122,7 +122,7 @@ export const postUsers = async(req,res)=>{
             password: hashedPassword,
             instaId: instaId,
             profileImage: profileImage,
-        
+            phoneNumber:phoneNumber,
             linkedIn: linkedIn,
             github: github
         })
