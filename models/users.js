@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema(
             type: String,
             minLength: 10,
             maxLength: 10,
-            required: true,
+            
             unique: true,
         },
         password: {
@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema(
             type: String,
             minLength: 2,
             maxLength: 255,
-            required: true,
+            
         },
         omegeleReports: {
             type: Number,
@@ -50,7 +50,7 @@ const userSchema = new mongoose.Schema(
         },
         instaId: {
             type: String,
-            required: true,
+            
             default: "",
             maxLength: 250,
         },
@@ -58,7 +58,7 @@ const userSchema = new mongoose.Schema(
             type: String,
             maxLength: 255,
             default: "",
-            required: true,
+            
         },
         totalScore: {
             type: Number,
@@ -68,13 +68,13 @@ const userSchema = new mongoose.Schema(
             type: String,
             default: "",
             maxLength: 255,
-            required: true,
+            
         },
         github: {
             type: String,
             default: "",
             maxLength: 255,
-            required: true,
+            
         },
     },
     { timestamps: true }
